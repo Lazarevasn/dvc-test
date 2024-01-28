@@ -1,0 +1,4 @@
+artifacts:
+  bird-rec-model:
+    path: bird-rec-model/saved_model.pb
+    type: model

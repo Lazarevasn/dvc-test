@@ -1,0 +1,40 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/
+      hash: md5
+      md5: 01b9625b49f93e7dd1b85bc095e8558a.dir
+      size: 358149349
+      nfiles: 1625
+    - path: src/train.py
+      hash: md5
+      md5: c6b8ff8daed1a26d820fc5048e2c7eda
+      size: 1915
+    params:
+      params.yaml:
+        train.epochs: 6
+    outs:
+    - path: bird-rec-model/
+      hash: md5
+      md5: 782a163226d02b434f81678d5c0f73ed.dir
+      size: 96073745
+      nfiles: 5
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+    - path: bird-rec-model
+      hash: md5
+      md5: 782a163226d02b434f81678d5c0f73ed.dir
+      size: 96073745
+      nfiles: 5
+    - path: data/
+      hash: md5
+      md5: 01b9625b49f93e7dd1b85bc095e8558a.dir
+      size: 358149349
+      nfiles: 1625
+    - path: src/evaluate.py
+      hash: md5
+      md5: 8fc9cc829088fc034170f9c6915fb5f6
+      size: 938

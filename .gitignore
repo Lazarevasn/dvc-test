@@ -1,3 +1,5 @@
 venv/
 /.vscode
 /bird-rec-model
+data/test/
+data/train/

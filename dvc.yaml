@@ -6,7 +6,7 @@ stages:
   train:
     cmd: python src/train.py
     deps:
-    - data/
+    - data/train.zip
     - src/train.py
     params:
     - train.epochs
@@ -16,12 +16,10 @@ stages:
     cmd: python src/evaluate.py
     deps:
     - bird-rec-model
-    - data/
+    - data/test.zip
     - src/evaluate.py
 metrics:
 - live/train/metrics.json
-- live/eval/metrics.json
-
 plots:
 - live/train/plots/metrics:
     x: step

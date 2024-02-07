@@ -1,7 +1,5 @@
 [core]
     remote = trainremote
-['remote "myremote"']
-    url = gdrive://1ZDlgOtVB-Jdkqt-cQrEdyl-QMCJwF2kq
 ['remote "trainremote"']
     url = gdrive://18u1khDx5A7oGxiCZ2kbDxPeUWZgJDSGQ
 ['remote "testremote"']

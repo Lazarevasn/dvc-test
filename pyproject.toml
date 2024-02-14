@@ -2,15 +2,15 @@
 name = "dvc-test"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["lazarevasn <ke2001lsa74@susu.ru>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-dvc = "^3.44.0"
-dvc-gdrive = "^3.0.1"
-keras = "^3.0.4"
-dvclive = "^3.41.1"
+python = ">=3.9, <3.12"
+tensorflow = "==2.15.0"
+dvc = "==3.40.1"
+dvc-gdrive = "==3.0.1"
+dvclive = "==3.5.1"
 
 
 [build-system]

@@ -1,2 +1,4 @@
 venv/
 /.vscode
+/bird-rec-model
+/live

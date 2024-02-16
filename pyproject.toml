@@ -2,16 +2,23 @@
 name = "dvc-test"
 version = "0.1.0"
 description = ""
-authors = ["lazarevasn <ke2001lsa74@susu.ru>"]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9, <3.12"
-tensorflow = "==2.15.0"
-dvc = "==3.40.1"
-dvc-gdrive = "==3.0.1"
-dvclive = "==3.5.1"
+tensorflow = "2.15.0"
+dvc = "~3.40.1"
+dvc-gdrive = "~3.0.1"
+dvclive = "~3.5.1"
+pillow = "10.2.0"
+scipy = "~1.12.0"
 
+[tool.poetry.group.mac]
+optional = true
+
+[tool.poetry.group.mac.dependencies]
+tensorflow-macos = "2.15.0"
 
 [build-system]
 requires = ["poetry-core"]

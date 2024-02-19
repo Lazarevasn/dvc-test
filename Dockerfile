@@ -9,5 +9,6 @@ RUN venv/bin/pip install poetry
 COPY . /workspace
 
 RUN poetry install --with mac
+RUN poetry shell
 RUN dvc pull -r trainremote data/train.zip
 RUN dvc pull -r testremote data/test.zip
